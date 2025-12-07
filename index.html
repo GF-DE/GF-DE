@@ -1,90 +1,150 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VALFE - Moda Urbana y Deportiva</title>
+    <title>VALFE Wear - Sport & Urban Mode</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
-    <div class="logo">VALFE</div>
+    <img src="img/logo-vf.jpeg" alt="VALFE Logo" class="logo">
     <nav>
-        <a href="#home">Inicio</a>
-        <a href="#catalogo">Catálogo</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#home" data-lang="de">Inicio</a>
+        <a href="#catalogo" data-lang="de">Katalog</a>
+        <a href="#contacto" data-lang="de">Kontakt</a>
+        <select id="language-switch">
+            <option value="de">DE</option>
+            <option value="en">EN</option>
+            <option value="es">ES</option>
+        </select>
     </nav>
 </header>
 
 <section class="hero" id="home">
-    <h1>VALFE</h1>
-    <p>Moda Urbana & Deportiva – Estilo Alemán con alma Argentina 🇦🇷🔥</p>
+    <img src="img/logo-valfe.jpeg" class="hero-bg" alt="Fondo VALFE">
+    <h1 data-lang="de">VALFE Wear</h1>
+    <p data-lang="de">Sport & Urban Mode – Deutscher Stil mit argentinischer Seele 🇦🇷🔥</p>
 </section>
 
 <section class="catalogo" id="catalogo">
-    <h2>Catálogo</h2>
+    <h2 data-lang="de">Katalog</h2>
     <div class="grid">
 
         <div class="item">
-    <img src="https://github.com/GF-DE/GF-DE/blob/main/imgremera1.jpg.jpeg?raw=true" alt="Remera Basic Fit" class="ph">
-    <h3>Remera Basic Fit</h3>
-    <p>€14,99</p>
-    <a class="btn" href="https://wa.me/491627723901">Comprar por WhatsApp</a>
-</div>
+            <img src="img/remera1.jpeg" alt="Remera Basic Fit" class="ph">
+            <h3 data-lang="de">Basic Fit T-Shirt</h3>
+            <p>€14,99</p>
+            <a class="btn" href="https://wa.me/491627723901">Kaufen via WhatsApp</a>
+        </div>
+
         <div class="item">
-            <div class="ph"></div>
-            <h3>Buzo Oversize</h3>
+            <img src="img/buzo1.jpeg" alt="Buzo Oversize" class="ph">
+            <h3 data-lang="de">Oversize Hoodie</h3>
             <p>€29,99</p>
-            <a class="btn" href="https://wa.me/491627723901">Comprar por WhatsApp</a>
+            <a class="btn" href="https://wa.me/491627723901">Kaufen via WhatsApp</a>
         </div>
 
         <div class="item">
-            <div class="ph"></div>
-            <h3>Pantalón Cargo</h3>
+            <img src="img/pantalon1.jpeg" alt="Pantalón Cargo" class="ph">
+            <h3 data-lang="de">Cargo Pants</h3>
             <p>€34,99</p>
-            <a class="btn" href="https://wa.me/491627723901">Comprar por WhatsApp</a>
+            <a class="btn" href="https://wa.me/491627723901">Kaufen via WhatsApp</a>
         </div>
 
         <div class="item">
-            <div class="ph"></div>
-            <h3>Conjunto Deportivo</h3>
+            <img src="img/conjunto1.jpeg" alt="Conjunto Deportivo" class="ph">
+            <h3 data-lang="de">Sport Set</h3>
             <p>€39,99</p>
-            <a class="btn" href="https://wa.me/491627723901">Comprar por WhatsApp</a>
+            <a class="btn" href="https://wa.me/491627723901">Kaufen via WhatsApp</a>
         </div>
 
         <div class="item">
-            <div class="ph"></div>
-            <h3>Remera Oversize</h3>
+            <img src="img/remera2.jpeg" alt="Remera Oversize" class="ph">
+            <h3 data-lang="de">Oversize T-Shirt</h3>
             <p>€19,99</p>
-            <a class="btn" href="https://wa.me/491627723901">Comprar por WhatsApp</a>
+            <a class="btn" href="https://wa.me/491627723901">Kaufen via WhatsApp</a>
         </div>
 
         <div class="item">
-            <div class="ph"></div>
-            <h3>Buzo Hoodie</h3>
+            <img src="img/buzo2.jpeg" alt="Buzo Hoodie" class="ph">
+            <h3 data-lang="de">Hoodie</h3>
             <p>€24,99</p>
-            <a class="btn" href="https://wa.me/491627723901">Comprar por WhatsApp</a>
+            <a class="btn" href="https://wa.me/491627723901">Kaufen via WhatsApp</a>
         </div>
 
     </div>
 </section>
 
 <section class="envio">
-    <h2>Envío 🚚</h2>
-    <p>Todos los pedidos se envían únicamente con DHL dentro de Alemania.</p>
-    <p>Tiempo de entrega: 1–3 días. Costos: €5,49 – €6,99 según tamaño del paquete.</p>
+    <h2 data-lang="de">Versand 🚚</h2>
+    <p data-lang="de">Alle Bestellungen werden nur mit DHL innerhalb Deutschlands versendet.</p>
+    <p data-lang="de">Lieferzeit: 1–3 Tage. Kosten: €5,49 – €6,99 je nach Paketgröße.</p>
 </section>
 
 <section class="contacto" id="contacto">
-    <h2>Contacto</h2>
-    <p>Instagram: <strong>@valfe</strong></p>
-    <a class="btn" href="https://wa.me/491627723901">Enviar mensaje por WhatsApp</a>
+    <h2 data-lang="de">Kontakt</h2>
+    <p data-lang="de">Instagram: <strong>@valfewear</strong></p>
+    <a class="btn" href="https://wa.me/491627723901">Nachricht via WhatsApp senden</a>
 </section>
 
 <footer>
-    © 2025 VALFE — Todos los derechos reservados.
+    © 2025 VALFE Wear — Alle Rechte vorbehalten.
 </footer>
+
+<script>
+    // Cambiar idioma
+    const switcher = document.getElementById('language-switch');
+    switcher.addEventListener('change', function() {
+        const lang = this.value;
+        document.querySelectorAll('[data-lang]').forEach(el => {
+            if(lang === 'de'){
+                el.textContent = el.getAttribute('data-lang');
+            } else if(lang === 'en'){
+                const translations = {
+                    "Inicio": "Home",
+                    "Katalog": "Catalog",
+                    "Kontakt": "Contact",
+                    "VALFE Wear": "VALFE Wear",
+                    "Sport & Urban Mode – Deutscher Stil mit argentinischer Seele 🇦🇷🔥": "Sports & Urban Style – German style with Argentine soul 🇦🇷🔥",
+                    "Basic Fit T-Shirt": "Basic Fit T-Shirt",
+                    "Oversize Hoodie": "Oversize Hoodie",
+                    "Cargo Pants": "Cargo Pants",
+                    "Sport Set": "Sport Set",
+                    "Oversize T-Shirt": "Oversize T-Shirt",
+                    "Hoodie": "Hoodie",
+                    "Versand 🚚": "Shipping 🚚",
+                    "Alle Bestellungen werden nur mit DHL innerhalb Deutschlands versendet.": "All orders are shipped with DHL within Germany only.",
+                    "Lieferzeit: 1–3 Tage. Kosten: €5,49 – €6,99 je nach Paketgröße.": "Delivery time: 1–3 days. Cost: €5.49 – €6.99 depending on package size.",
+                    "Instagram: ": "Instagram: ",
+                    "Nachricht via WhatsApp senden": "Send message via WhatsApp"
+                };
+                el.textContent = translations[el.getAttribute('data-lang')] || el.textContent;
+            } else if(lang === 'es'){
+                const translations = {
+                    "Inicio": "Inicio",
+                    "Katalog": "Catálogo",
+                    "Kontakt": "Contacto",
+                    "VALFE Wear": "VALFE Wear",
+                    "Sport & Urban Mode – Deutscher Stil mit argentinischer Seele 🇦🇷🔥": "Moda Urbana y Deportiva – Estilo Alemán con alma Argentina 🇦🇷🔥",
+                    "Basic Fit T-Shirt": "Remera Basic Fit",
+                    "Oversize Hoodie": "Buzo Oversize",
+                    "Cargo Pants": "Pantalón Cargo",
+                    "Sport Set": "Conjunto Deportivo",
+                    "Oversize T-Shirt": "Remera Oversize",
+                    "Hoodie": "Buzo Hoodie",
+                    "Versand 🚚": "Envío 🚚",
+                    "Alle Bestellungen werden nur mit DHL innerhalb Deutschlands versendet.": "Todos los pedidos se envían únicamente con DHL dentro de Alemania.",
+                    "Lieferzeit: 1–3 Tage. Kosten: €5,49 – €6,99 je nach Paketgröße.": "Tiempo de entrega: 1–3 días. Costos: €5,49 – €6,99 según tamaño del paquete.",
+                    "Instagram: ": "Instagram: ",
+                    "Nachricht via WhatsApp senden": "Enviar mensaje por WhatsApp"
+                };
+                el.textContent = translations[el.getAttribute('data-lang')] || el.textContent;
+            }
+        });
+    });
+</script>
 
 </body>
 </html>
