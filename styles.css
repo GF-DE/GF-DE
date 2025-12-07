@@ -17,9 +17,7 @@ header {
 }
 
 header .logo {
-    font-size: 28px;
-    font-weight: 800;
-    letter-spacing: 2px;
+    height: 50px;
 }
 
 nav a {
@@ -34,19 +32,45 @@ nav a:hover {
     color: white;
 }
 
+nav select {
+    margin-left: 20px;
+    padding: 5px;
+    background: #2a2a2a;
+    color: #eee;
+    border: none;
+    border-radius: 5px;
+}
+
 .hero {
     height: 60vh;
-    background: linear-gradient(to bottom right, #2b2b2b, #1a1a1a);
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+    z-index: -1;
 }
 
 .hero h1 {
     font-size: 60px;
     margin: 0;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 10px;
 }
 
 .catalogo, .envio, .contacto {
@@ -72,11 +96,13 @@ nav a:hover {
     transform: scale(1.05);
 }
 
-.ph {
-    background: #444;
+.item .ph {
+    width: 100%;
     height: 150px;
+    object-fit: cover;
     border-radius: 10px;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .btn {
@@ -95,4 +121,13 @@ footer {
     background: #121212;
     text-align: center;
     color: #aaa;
+}
+
+@media(max-width:768px){
+    .hero h1 {
+        font-size: 40px;
+    }
+    .catalogo .grid {
+        gap: 20px;
+    }
 }
